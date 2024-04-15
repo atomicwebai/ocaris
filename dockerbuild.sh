@@ -1,0 +1,1 @@
+docker build -t claudemir1/ocaris:1.0.0 .
