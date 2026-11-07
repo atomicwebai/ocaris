@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border-color: #e2e8f0;
+    --liturgy-red: #b91c1c;
+    --liturgy-gold: #b45309;
+    --liturgy-assembly-bg: #fef3c7;
+    --liturgy-assembly-text: #78350f;
+  }
+
+  html.dark {
+    --bg-primary: #090d16;
+    --bg-surface: #111827;
+    --bg-subtle: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --border-color: #374151;
+    --liturgy-red: #f87171;
+    --liturgy-gold: #fbbf24;
+    --liturgy-assembly-bg: #291e0a;
+    --liturgy-assembly-text: #fde68a;
+  }
+
+  html.theme-sepia {
+    --bg-primary: #f4ede2;
+    --bg-surface: #fbf7ee;
+    --bg-subtle: #ebdcc2;
+    --text-primary: #2d241e;
+    --text-secondary: #5e5045;
+    --border-color: #dec8a7;
+    --liturgy-red: #9e2a2b;
+    --liturgy-gold: #a67c00;
+    --liturgy-assembly-bg: #ece0ca;
+    --liturgy-assembly-text: #4a3818;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Liturgical content styling */
+.liturgy-content p {
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
+}
+
+.liturgy-cross {
+  color: var(--liturgy-red);
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0.15rem;
+}
+
+.liturgy-dialogue-pe {
+  margin-bottom: 0.75rem;
+}
+
+.liturgy-dialogue-t {
+  margin-bottom: 0.85rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--liturgy-gold);
+  background-color: var(--liturgy-assembly-bg);
+  color: var(--liturgy-assembly-text);
+  font-weight: 500;
+}
+
+.liturgy-rubric {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.92em;
+  margin: 0.6rem 0;
+  display: block;
+}
+
+.liturgy-section-header {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: var(--liturgy-red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.95em;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 0.25rem;
+}
