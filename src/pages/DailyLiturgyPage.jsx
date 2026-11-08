@@ -3,10 +3,10 @@ import { CalendarDays, BookOpen, ChevronLeft, ChevronRight, LoaderCircle } from 
 
 const sections = [
   { id: 'coleta', label: 'Oração da Coleta', group: 'oracoes' },
-  { id: 'oferendas', label: 'Oração sobre as Oferendas', group: 'oracoes' },
-  { id: 'comunhao', label: 'Oração após a Comunhão', group: 'oracoes' },
   { id: 'leituras', label: 'Leituras e salmo', group: 'leituras' },
   { id: 'evangelho', label: 'Evangelho', group: 'leituras' },
+  { id: 'oferendas', label: 'Oração sobre as Oferendas', group: 'oracoes' },
+  { id: 'comunhao', label: 'Oração após a Comunhão', group: 'oracoes' },
 ];
 
 function localDateValue(date) {
