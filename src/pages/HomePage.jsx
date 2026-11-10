@@ -50,7 +50,7 @@ export default function HomePage({ isSearchOpen, setIsSearchOpen }) {
           Orações Eucarísticas
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-gray-400 theme-sepia:text-[#5e5045] max-w-lg mx-auto">
-          Textos completos do Missal Romano para celebração e estudo litúrgico.
+          Textos do Missal Romano para celebração e estudo litúrgico.
         </p>
       </div>
 
