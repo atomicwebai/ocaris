@@ -8,7 +8,14 @@ export default function Header({ onOpenPreferences, onToggleSearch, isSearchOpen
   const location = useLocation();
   const { theme, setTheme, fontSize, increaseFontSize, decreaseFontSize } = useSettings();
 
-  const isHome = location.pathname === '/';
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const hasBasePath = basePath && (
+    location.pathname === basePath || location.pathname.startsWith(`${basePath}/`)
+  );
+  const routePath = hasBasePath
+    ? location.pathname.slice(basePath.length) || '/'
+    : location.pathname;
+  const isHome = routePath === '/' || routePath === '';
 
   const toggleTheme = () => {
     if (theme === 'light') setTheme('dark');

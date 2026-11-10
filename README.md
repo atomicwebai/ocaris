@@ -50,12 +50,6 @@ npm install
 # 2. Iniciar servidor de desenvolvimento
 npm run dev
 ```
-Acesse no navegador: `http://localhost:3000`
-
-### Build para Produção
-```bash
-npm run build
-npm run preview
-```
+Acesse no navegador: `http://localhost:5173`
 
 ---

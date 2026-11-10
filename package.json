@@ -3,7 +3,7 @@
   "homepage": "https://atomicweb.com.br/ocaris/",
   "private": true,
   "version": "1.0.0",
-  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "description": "Orações Eucarísticas do Missal Romano, ritos litúrgicos e liturgia diária.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@atomicweb.gitlab.com:atomicweb/comercial/ocaris.git"
+    "url": "git@github.com:atomicwebai/ocaris.git"
   },
   "keywords": [],
   "author": "",
